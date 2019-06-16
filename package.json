@@ -1,0 +1,9 @@
+{
+  "devDependencies": {
+    "sass": "^1.21.0"
+  },
+  "private": true,
+  "scripts": {
+    "start": "sass index.scss:index.css --watch"
+  }
+}
