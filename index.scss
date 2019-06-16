@@ -57,11 +57,11 @@ vstack {
 text {
   line-height: 1;
 
-  &[style=title] {
+  &[font=title] {
     font-size: 25px;
   }
 
-  &[style=caption] {
+  &[font=caption] {
     color: #888;
     font-size: 15px;
   }
