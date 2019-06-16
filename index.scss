@@ -16,12 +16,16 @@ hstack,
 vstack {
   display: grid;
 
-  &[spacing=s] {
+  &[spacing] {
+    grid-gap: 10px;
+  }
+
+  &[spacing=condensed] {
     grid-gap: 5px;
   }
 
-  &[spacing=m] {
-    grid-gap: 10px;
+  &[spacing=relaxed] {
+    grid-gap: 20px;
   }
 }
 
