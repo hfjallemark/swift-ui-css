@@ -1,0 +1,74 @@
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  align-content: center;
+  background: #fff;
+  display: grid;
+  font-family: -apple-system,BlinkMacSystemFont,avenir next,avenir,helvetica neue,helvetica,ubuntu,roboto,noto,segoe ui,arial,sans-serif;
+  justify-items: center;
+}
+
+hstack,
+vstack {
+  display: grid;
+
+  &[spacing=s] {
+    grid-gap: 5px;
+  }
+
+  &[spacing=m] {
+    grid-gap: 10px;
+  }
+}
+
+hstack {
+  align-items: center;
+  grid-auto-flow: column;
+  justify-content: center;
+
+  &[alignment=leading] {
+    justify-content: left;
+  }
+
+  divider {
+    border-left: solid 1px #eee;
+    align-self: stretch;
+  }
+}
+
+vstack {
+  align-content: center;
+  justify-items: center;
+
+  &[alignment=leading] {
+    justify-items: left;
+  }
+
+  divider {
+    border-top: solid 1px #eee;
+    justify-self: stretch;
+  }
+}
+
+text {
+  line-height: 1;
+
+  &[style=title] {
+    font-size: 25px;
+  }
+
+  &[style=caption] {
+    color: #888;
+    font-size: 15px;
+  }
+}
+
+img {
+  &[rounding=full] {
+    border-radius: 50%;
+  }
+}
